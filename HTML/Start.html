@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="styles/style.css" rel="stylesheet">
 </head>
-<body style="background-image: url(blueGalaxy.jpg);"">
-    <textarea style="opacity: 0.7;" name="inputInformation" id="inputInformation" cols="150" rows="30">请在此输入个人信息</textarea>
+<body style="background-image: url(images/blueGalaxy.jpg);"">
+    <textarea style="opacity: 0.7;" name="inputInformation" id="inputInformation" cols="150" rows="30">请在此输入信息</textarea>
 
     <br />
 
@@ -23,8 +24,7 @@
         }
 
         function mainClick(){
-            var isok = isOK();
-            if(isok == true){
+            if(isOK()){
                 var text = document.getElementById("inputInformation").value;
                 document.write(text);
             }
